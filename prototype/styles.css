@@ -1,0 +1,95 @@
+/* CSS for the layout */
+.title-border {
+    text-align: center;
+    padding: 5px 0;
+    background-color: lightgray;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.title-border h1 {
+    margin: 0;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 80vh; /* Adjusted height to accommodate the title border */
+    margin-top: 20px;
+}
+
+.left-box {
+    flex: 0 0 70vh;
+    background-color: lightgray;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px; 
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left-box h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.left-box h2{
+    font-size: 20px;
+    margin-left: 18px;
+}
+.left-box p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.description{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10vh;
+    font-size: 25px;
+  }
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 50px;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.sections {
+    background-color: lightgray;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.detail-box {
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left:20px;
+}
+
+.detail-box p, a{
+    font-size: 20px;
+}
