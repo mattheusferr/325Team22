@@ -1,0 +1,136 @@
+/* CSS for the layout */
+.title-border {
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(228, 228, 228);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 0;
+    text-align:center;
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 80vh; /* Adjusted height to accommodate the title border */
+    margin-top: 20px;
+}
+
+.left-box {
+    flex: 0 0 70vh;
+    background-color: rgb(228, 228, 228);
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left-box h2, p{
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+.left-box p{
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 3%;
+}
+.description{
+    font-size: 25px;
+  }
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 50px;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.sections {
+    background-color: rgb(228, 228, 228);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.detail-box {
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left:20px;
+}
+
+.detail-box p, a{
+    font-size: 20px;
+}
+
+button {
+    font-size: 25px;
+    padding: 20px;
+    width: 250px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-top: 0%;
+    transition: all 0.5s;
+    border: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+}
+
+.button span {
+    transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;   
+}
+
+.button span:after {
+    
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    color: black;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
